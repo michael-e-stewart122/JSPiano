@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Play with an electronic piano keyboard made with Javascript. Dynamically generated audio creates a realistic playing experience." />
+    <meta name="author" content="Copied from Joe Liang, who modified the original from Keith Horwood" />
+    <link rel="stylesheet" href="style.css">
+    <title>Copied JavaScript Piano</title>
+
+    <script src="audiosynth.js"></script>
+    <script src="playKeyboard.js"></script>
+
+</head>
+
+<body>
+
+    <h1 class="title">Javascript Piano Keyboard from freeCodeCamp</h1>
+    <h2><a href="https://1000mileworld.com/about/#author">Borrowed from Joe Liang</a></h2>
+
+    <div ID="keyboard" class="keyboard-holder"></div>
+    <!--calls js to create keyboard with id-->
+
+    <script type="text/javascript">playKeyboard()</script>
+
+    <div class="content">
+        <p>I copied this piano keyboard in Javascript based on the <a
+                href="https://www-freecodecamp-org.cdn.ampproject.org/c/s/www.freecodecamp.org/news/javascript-piano-keyboard/amp/#step1">dynamically
+                generated synthetic keyboard</a> made by Keith William Horwood. Joe Liang extended the number of keys
+            available to 4 octaves, set new key bindings, applied some stylistic changes, and posted this to www-freecodecamp-org. To keep things simple, he
+            removed the option of switching to different instrument sounds and just kept piano.  There was also no CSS file.  I added one and plan on getting the other instrument functionality back at some point.</p>
+
+        <p>What makes this keyboard interesting is the fact that Javascript dynamically generates the appropriate sound
+            when the user presses a key and the code does not load any external audio files.</p>
+    </div>
+
+</body>
+
+</html>
